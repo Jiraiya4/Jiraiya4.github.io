@@ -1,263 +1,337 @@
-s
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
-
-    <!-- Put here your site title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
     <title>Dmytro Panfilov | Web-Developer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Dmytro Panfilov | Web-Developer" />
-
-    <!-- Required librarys -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <meta
+      name="keywords"
+      content="[Anil Seervi],Anil seervi, Portfolio,Developer,Designer, Front-End, Vanilla JS, HTML5, CSS3"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="title" content="Anil Seervi | Front-End Developer, Desginer." />
+    <meta
+      name="description"
+      content="Portfolio Website of Anil Seervi, Front-End Developer, Designer"
+    />
+    <meta name="theme-color" content="#4a00e0" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://anilseervi.github.io/Portfolio/" />
+    <meta
+      property="og:title"
+      content="Anil Seervi | Front-End Developer, Desginer."
+    />
+    <meta
+      property="og:description"
+      content="Portfolio Website of Anil Seervi, Front-End Developer, Designer"
+    />
+    <meta
+      property="og:image"
+      content="https://anilseervi.github.io/Portfolio/assets/Thumbnail.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://anilseervi.github.io/Portfolio/"
+    />
+    <meta
+      property="twitter:title"
+      content="Anil Seervi | Front-End Developer, Desginer."
+    />
+    <meta
+      property="twitter:description"
+      content="Portfolio Website of Anil Seervi, Front-End Developer, Designer"
+    />
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.github.io/Portfolio/assets/Thumbnail.png"
+    />
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-5"
+    ></script>
     <script>
-      ScrollReveal({ reset: false });
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-5");
     </script>
+    <link rel="manifest" href="./manifest.json" />
   </head>
-
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
-
-    <!-- **** Hero Section **** -->
-    <div id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Dmytro Panfilov</span>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Dmytro Panfilov</span>
           <br />
           I'm the Future Web-Developer.
         </h1>
-        <p class="hero-cta" class="load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#projects">My Projects</a>
         </p>
-      </div>
+      </section>
+      <a href="#about" class="scroll-down-link">
+        <div class="scroll-down"></div
+      ></a>
     </div>
     <!-- /END Hero Section -->
-
-    <!-- **** About Section **** -->
+    <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">About me</h2>
+        <h2 class="section-title">About Me</h2>
         <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/profile.jpg"
+              alt="Profile Image"
+            />
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-                Responsible, conscientious, honest. I try to develop myself comprehensively. Now I want to realize my professional dream and get a job in my specialty. I have long wanted to make money with my head, not with my hands, it's time to implement it. This work is important for me because it will open doors in many areas.
-              </p>
-              <p class="about-wrapper__info-text">
-                My interests: programming, sport, books, bord-games, new acquaintance, self-development
-              </p>
-            </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Responsible, conscientious, honest. I try to develop myself comprehensively. Now I want to realize my professional dream and get a job in my specialty. I have long wanted to make money with my head, not with my hands, it's time to implement it. This work is important for me because it will open doors in many areas.
+            </p>
+           
+            <p class="about-wrapper__info-text">
+              My interests: programming, sport, books, bord-games, new acquaintance, self-development
+            </p>
+
+            <span class="about-wrapper__cta">
+              <a
+                href="https://github.com/Jiraiya4"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cta-btn cta-btn--resume"
+                >View My GitHub</a
+              >
+            </span>
           </div>
         </div>
       </div>
     </section>
     <!-- /END About Section -->
-
-    <!-- **** Projects Section **** -->
+    <!--Projects Section-->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
-
           <!-- Each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Robofriends</h3>
-                <div>
-                  <p class="mb-4">
-                   A simple project in which you can find the desired robot from the downloaded ones in the search bar. In the project I used Html, Css, JavaScript, React, Redux, API
-                  </p>
-                </div>
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Robofriends</h3>
+        
+              <p class="project-wrapper__text-info">
+                A simple project in which you can find the desired robot from the downloaded ones in the search bar. In the project I used Html, Css, JavaScript, React, Redux, API
+              </p>
+              <div class="project-wrapper__text-btns">
                 <a
-                  rel="noreferrer"
+                href="https://jiraiya4.github.io/robofriends/"
+
                   target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://jiraiya4.github.io/robofriends/"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
                 >
-                  See Live
-                </a>
                 <a
-                  rel="noreferrer"
+                href="https://github.com/Jiraiya4/robofriends"
+
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="cta-btn text-color-main"
-                  href="https://github.com/Jiraiya4/robofriends"
+                  >Source Code</a
                 >
-                  Source Code
-                </a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded js-tilt">
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project1.png"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div class="project-wrapper__image">
+              <a
+                href="https://jiraiya4.github.io/robofriends/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project1.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <!-- /END Project -->
-
           <!-- Each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Smart Brain</h3>
-                <div>
-                  <p class="mb-4">
-                    A project in which you can register and then log in. With the help of the API, it will find the face on the picture you inserted into the link. With every face you find, your rank rises. All data is stored in a database on Heroku servers. In the project I used Html, Css, JavaScript, React, Redux, API, Node.js, Express.js, SQL database, Heroku 
-                  </p>
-                </div>
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Smart Brain</h3>
+              <p class="project-wrapper__text-info">
+                A project in which you can register and then log in. With the help of the API, it will find the face on the picture you inserted into the link. With every face you find, your rank rises. All data is stored in a database on Heroku servers. In the project I used Html, Css, JavaScript, React, Redux, API, Node.js, Express.js, SQL database, Heroku 
+                
+              </p>
+              <div class="project-wrapper__text-btns">
                 <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
                   href="https://panfilov-smart-brain.herokuapp.com/"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
                   target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/Jiraiya4/smart_brain"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
                 >
-                  Source Code
-                </a>
+                <a
+                  href="https://github.com/Jiraiya4/smart_brain"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                >
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded js-tilt">
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project2.png"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div class="project-wrapper__image">
+              <a
+                href="https://panfilov-smart-brain.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project2.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <!-- /END Project -->
-
           <!-- Each .row is a project -->
           <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
-                <div>
-                  <p class="mb-4">
-                    A large project that is under development, I want to make my own mini social network. At this stage, the login, user loading, following / unfollowing, user profile loading are implemented. I will be able to show the project for an interview. Everything is implemented using Html, Css, JavaScript, React, Redux, API.
-                  </p>
-                </div>
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Social Web</h3>
+              <p class="project-wrapper__text-info">
+                A large project that is under development, I want to make my own mini social network. At this stage, the login, user loading, following / unfollowing, user profile loading are implemented. I will be able to show the project for an interview. Everything is implemented using Html, Css, JavaScript, React, Redux, API.
+
+              </p>
+              <div class="project-wrapper__text-btns">
                 <a
-                  rel="noreferrer"
+                  href="https://github.com/Jiraiya4/my-social-web"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  >Source Code</a
                 >
-                  Source Code
-                </a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded js-tilt">
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project3.png"
-                    />
-                  </div>
-                </a>
-              </div>
+            <div class="project-wrapper__image">
+              <a
+                href="https://github.com/Jiraiya4/my-social-web"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/project3.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <!-- /END Project -->
-        </div>
-      </div>
+          
     </section>
-    <!-- /END Projects Section -->
-
-    <!-- **** Contact Section **** -->
+    <!-- End Projects Section -->
+    <!-- Contact Section -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Email me anytime</p>
+          <p class="contact-wrapper__text">Write Me Anytime</p>
           <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
             href="mailto:dmytro.panfilov.work@gmail.com"
-            >email</a
+            class="cta-btn cta-btn--resume"
+            >Email</a
           >
         </div>
       </div>
     </section>
-    <!-- /END Contact Section -->
-
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
+    <!-- END Contact Section -->
+    <!-- Footer Section -->
+    <footer class="footer">
       <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
+        <a href="#hero" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://www.linkedin.com/in/dmytro-panfilov-07b1a5213/" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
+          <a
+            href="https://www.instagram.com/panfeelove_/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-instagram"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/Jiraiya4" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dmytro-panfilov-07b1a5213/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Jiraiya4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa fa-github"></i>
           </a>
         </div>
-
         <hr />
-
-        <!-- If you give me some credit, will be huge for me :) -->
         <p class="footer__text">
-          Personal site of
-          <a rel="noreferrer" href="https://github.com/Jiraiya4" target="_blank"
+          &copy; <span id="year"></span> - Portfolio of
+          <a
+            href="https://github.com/Jiraiya4"
+            target="_blank"
+            rel="noopener noreferrer"
             >Dmytro Panfilov</a
-          >
+          >. <br />Made with &hearts;
         </p>
-
-        <!-- Remove this paragraph once you setup your custom portfolio -->
       </div>
     </footer>
-    <!-- /END Footer Section -->
+    <!-- END Footer Section -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
   </body>
 </html>
